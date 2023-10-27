@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiy="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+ <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="util.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1 class="text-center" style=color:white>Customer Survey Form</h1>
+
+
+  <form  class="text-center" action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+    <fieldset>
+    <div class="form-control" id="fname">
+    <label>First Name</label>
+    <input type="text" name="cfname" required><b><span class="formerror"></span></b>
+    </div>
+
+    <div class="form-control" id="lname">
+       <label>Last Name</label>
+       <input type="text" name="clname" required><b><span class="formerror"></span></b>
+    </div>   
+    
+    <div class="form-control"  id="email">
+       <label>Email</label>
+       <input type="email" name="cemail" required><b><span class="formerror"></span></b>
+    </div>
+
+    <div class="form-control"  id="mobile">
+       <label>Mobile no.</label>
+       <input type="number" name="cmobile" required><b><span class="formerror"></span></b>
+    </div>  
+
+    <div class="form-control" id="dob">
+        <label>Date of Birth</label>
+        <input type="date" name="cdob" required>
+    </div> 
+    
+    <div class="form-control">
+       <label>Country</label>
+        <select>
+          <option>Afghanishtan</option>
+          <option>Algeria</option>
+          <option>Argentina</option>
+          <option>Aermenia</option>
+          <option>Australia</option>
+          <option>Austria</option>
+          <option>Bangladesh</option>
+          <option>Belgium</option>
+          <option>Bhutan</option>
+          <option>Brazil</option>
+          <option>Cambodia</option>
+          <option>Canada</option>
+          <option>China</option>
+          <option>Colombia</option>
+          <option>India</option>
+          <option>Japan</option>
+          <option>Malasiya</option>
+          <option>Malasiya</option>
+          <option>Pakistan</option>
+          <option>Singapore</option>
+          <option>Sri Lanka</option>
+          <option>Sweden</option>
+          <option>Thailand</option>
+          <option>Turkey</option>
+          <option>Ukraine</option>
+          <option>UK</option>
+          <option>USA</option>
+          <option>Uzbekistan</option>
+          <option>Vietnam</option>
+          <option>Yenem</option>
+          <option>Zimbabwe</option>
+
+        </select>
+    </div> 
+   
+    <div class="form-control">
+       <label>Gender</label>
+       <input type="checkbox" name="gender" checked>Male
+       <input  type="checkbox" name="gender">Female
+       <input  type="checkbox" name="gender">Prefer not to say
+    <div> 
+
+    <div class="form-control">
+      <label>Profession</label>
+       <select name="cprofession">
+         <option>Student</option>
+         <option>Graduate</option>
+         <option>Post Graduate</option>
+         <option>Intern</option>
+         <option>Employee</option>
+       </select>
+    </div>     
+      
+    <div class="form-control">
+       <label>Is this first time you are using our products & service ?</label>
+       <input type="radio" name="choice" checked>Yes
+       <input type="radio" name="choice">No
+    <div>
+
+    <div class="form-control">
+        <label >Would you suggest to your friend and colleague ?</label>
+        <input type="radio" name="suggest" checked>Yes
+        <input type="radio" name="suggest">No
+    <div> 
+    
+    <div class="form-control">
+        <label>How satisfied are you with our company overall ?</label>
+        <input type="radio" name="satisfaction" checked>Satisfied
+        <input type="radio" name="satisfaction">Undecided
+        <input type="radio" name="satisfaction">Unsatisfied
+    <div>   
+      
+    <div class="form-control">
+        <label>Do you have suggestion to improve our service ?</label>
+        <textarea id="input"></textarea>      
+    <div> 
+      
+    <button type="submit" value="Submit">Submit</button>
+  </fieldset>
+
+ 
+   
+
+</form>
+
+
+
+    
+
+<script src="script.js"></script>
+</body>
+</html>    

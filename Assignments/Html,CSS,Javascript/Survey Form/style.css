@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+html,body{
+    height:100%;
+    width: 100%;
+    font-family: 'Roboto';
+    background-color: rgb(70, 134, 251);
+    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-center label{
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.form-control{
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+form{
+    margin:30px auto ;
+    padding: 0px 30px;
+    max-width: 450px;
+    background-color:white;
+}
+
+.form-control input,
+.form-control textarea,
+.form-control select{
+    display: block;
+    padding: 6px;
+    width: 96%;
+}
+
+.form-control textarea{
+    padding: 6px;
+    height: 90px;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"]
+{
+    display: inline-block;
+    width: auto;
+}
+
+button{
+    display: block;
+    width: 30%;
+    padding: 10px 10px;
+    margin-top: 20px;
+    background-color: rgb(9, 140, 192);
+}
+
+.formerror{
+    color:red;
+}
